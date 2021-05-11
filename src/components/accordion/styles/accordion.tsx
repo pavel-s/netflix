@@ -7,6 +7,7 @@ export const Container = styled.div`
   color: #fff;
   font-size: 1.625rem;
   font-weight: 400;
+  border-bottom: 8px solid #222;
 
   @media (max-width: 949px) {
     font-size: 1.25rem;
