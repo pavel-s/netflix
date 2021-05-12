@@ -54,7 +54,6 @@ export const Item = styled.div`
 
 export const Header = styled.div`
   display: flex;
-  justify-content: space-between;
   padding: 0.8em 2.2em 0.8em 1.2em;
   margin-bottom: 1px;
   background-color: #303030;
@@ -66,7 +65,7 @@ export const Header = styled.div`
   & > img {
     position: absolute;
     right: 1em;
-    top: 50% - 1em;
+    top: calc(50% - 0.5em);
     filter: brightness(0) invert(1);
     width: 1em;
     height: 1em;
