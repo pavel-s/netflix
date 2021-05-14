@@ -3,11 +3,11 @@ import { TRSC } from '../../types';
 
 import { Break, Button, Container, Input, Text } from './styles/opt-form';
 
-type TOptForm = TRSC<HTMLDivElement> & {
-  Input: TRSC<HTMLInputElement>;
-  Text: TRSC<HTMLParagraphElement>;
-  Button: TRSC<HTMLButtonElement>;
-  Break: TRSC<HTMLDivElement>;
+type TOptForm = TRSC<'div'> & {
+  Input: TRSC<'input'>;
+  Text: TRSC<'p'>;
+  Button: TRSC<'button'>;
+  Break: TRSC<'div'>;
 };
 
 const OptForm: TOptForm = ({ children, ...rest }) => {
