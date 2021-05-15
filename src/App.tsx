@@ -1,17 +1,14 @@
-import FAQs from './containers/faqs';
-import FooterContainer from './containers/footer';
-import JumbotronContainer from './containers/jumbotron';
 import GlobalStyles from './global-styles';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import * as ROUTES from './constants/routes';
 
-function App() {
+const App = () => {
   return (
-    <>
+    <Router>
       <GlobalStyles />
-      <JumbotronContainer />
-      <FAQs />
-      <FooterContainer />
-    </>
+      <Route exact path={ROUTES.HOME}></Route>
+    </Router>
   );
-}
+};
 
 export default App;
