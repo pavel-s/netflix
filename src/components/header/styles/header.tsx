@@ -3,6 +3,25 @@ import { Link as RouterLink } from 'react-router-dom';
 
 export const Background = styled.div`
   background: url(/images/misc/home-bg.jpg);
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0) 75%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    z-index: -1;
+  }
 `;
 
 export const Container = styled.div`
