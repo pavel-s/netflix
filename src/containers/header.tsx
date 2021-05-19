@@ -1,11 +1,12 @@
 import { Feature, Header, OptForm } from '../components';
+import * as ROUTES from '../constants/routes';
 
 const HeaderContainer = () => {
   return (
     <Header>
       <Header.Frame>
         <Header.Logo src='/images/misc/logo.svg' alt='Netflix' />
-        <Header.SignButton to='/'>Sign In</Header.SignButton>
+        <Header.SignButton to={ROUTES.LOGIN}>Sign In</Header.SignButton>
       </Header.Frame>
       <Feature>
         <Feature.Title>Unlimited movies, TV shows, and more.</Feature.Title>

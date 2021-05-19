@@ -16,8 +16,8 @@ export const Background = styled.div`
     background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.8) 0,
-      rgba(0, 0, 0, 0) 40%,
-      rgba(0, 0, 0, 0) 75%,
+      rgba(0, 0, 0, 0.5) 40%,
+      rgba(0, 0, 0, 0.5) 75%,
       rgba(0, 0, 0, 0.8) 100%
     );
     z-index: -1;
