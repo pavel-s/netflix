@@ -6,7 +6,7 @@ import Login from './pages/login';
 import SignUP from './pages/signup';
 import { IsUserRedirect, ProtectedRoute } from './helpers/routes';
 import Browse from './pages/browse';
-import { useAuthUser } from './hooks/use-auth-user';
+import { useAuthUser } from './hooks';
 
 const App = () => {
   const user = useAuthUser();

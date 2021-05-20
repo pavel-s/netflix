@@ -15,3 +15,13 @@ export type TRSC<T extends keyof JSX.IntrinsicElements, P = {}, O = undefined> =
     > &
       P
   >;
+
+export type TMediaItem = {
+  maturity: string;
+  slug: string;
+  title: string;
+  description: string;
+  id: string;
+  genre: string;
+  docId: string;
+};

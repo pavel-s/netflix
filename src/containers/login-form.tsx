@@ -3,7 +3,7 @@ import { Form } from '../components';
 import * as ROUTES from '../constants/routes';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
-import { useAuth } from '../hooks/use-auth-user';
+import { useAuth } from '../hooks';
 
 const EMAIL_ERROR = 'Please enter a valid email.';
 const PASSWORD_ERROR =

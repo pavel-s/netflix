@@ -1,6 +1,6 @@
 import { Feature, Header, OptForm } from '../components';
 import * as ROUTES from '../constants/routes';
-import { useAuth, useAuthUser } from '../hooks/use-auth-user';
+import { useAuth, useAuthUser } from '../hooks';
 
 const HeaderContainer = () => {
   const user = useAuthUser();

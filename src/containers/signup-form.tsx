@@ -4,7 +4,7 @@ import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { useState } from 'react';
 import { useHistory } from 'react-router';
-import { useAuth } from '../hooks/use-auth-user';
+import { useAuth } from '../hooks';
 
 const EMAIL_ERROR = 'Please enter a valid email.';
 const PASSWORD_ERROR =
