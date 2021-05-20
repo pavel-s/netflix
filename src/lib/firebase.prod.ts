@@ -1,6 +1,10 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
+
+// firebase.User type not work
+export type TFirebaseUser = import('@firebase/auth-types').User;
+
 // import { seedDatabase } from '../seed';
 
 const firebaseConfig = {
@@ -17,5 +21,7 @@ firebase.initializeApp(firebaseConfig);
 // seedDatabase(firebase); // add test data to database
 
 export type TFirebase = typeof firebase;
+
+export const auth = firebase.auth();
 
 export default firebase;

@@ -20,7 +20,7 @@ type TForm = TRSC<'div'> & {
   Title: TRSC<'h1'>;
   Input: TRSC<'input', { error?: boolean }>;
   Error: TRSC<'p'>;
-  Submit: TRSC<'button', {}, 'type'>;
+  Submit: TRSC<'button', { isLoading?: boolean }, 'type'>;
   Row: TRSC<'div'>;
   Checkbox: TRSC<'input', { label: string }, 'type'>;
   Text: TRSC<'p'>;
@@ -49,9 +49,11 @@ Form.Error = function FormError({ ...rest }) {
   return <Error {...rest} />;
 };
 
-Form.Submit = function FormSubmit({ children, ...rest }) {
+Form.Submit = function FormSubmit({ isLoading = false, children, ...rest }) {
+  console.log('isLoading: ', isLoading);
+
   return (
-    <Submit {...rest} type='submit'>
+    <Submit {...rest} isLoading={isLoading} type='submit'>
       {children}
     </Submit>
   );

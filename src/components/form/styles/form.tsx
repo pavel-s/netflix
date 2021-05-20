@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled, { keyframes } from 'styled-components/macro';
 import { Link as RouterLink } from 'react-router-dom';
 
 export const Container = styled.div`
@@ -57,7 +57,19 @@ export const Error = styled.p`
   padding: 6px 3px;
 `;
 
-export const Submit = styled.button.attrs({ type: 'submit' })`
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+export const Submit = styled.button.attrs({ type: 'submit' })<{
+  isLoading: boolean;
+}>`
+  position: relative;
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -71,7 +83,7 @@ export const Submit = styled.button.attrs({ type: 'submit' })`
     opacity: 0.5;
   }
 
-  :hover {
+  :hover:not(:disabled) {
     background-color: #f40612;
   }
 
@@ -81,6 +93,34 @@ export const Submit = styled.button.attrs({ type: 'submit' })`
 
   :focus-visible {
     outline: 1px solid #fff;
+  }
+
+  ::before {
+    content: '';
+    display: ${({ isLoading }) => (isLoading ? 'block' : 'none')};
+    position: absolute;
+    background-color: inherit;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  ::after {
+    content: '';
+    display: ${({ isLoading }) => (isLoading ? 'block' : 'none')};
+    position: absolute;
+    top: calc(50% - 1em);
+    left: calc(50% - 1em);
+    width: 2em;
+    height: 2em;
+    border-top: 3px solid rgba(255, 255, 255, 0.2);
+    border-right: 3px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+    border-left: 3px solid #ffffff;
+    border-radius: 50%;
+    animation: ${rotate} 1s infinite linear;
   }
 `;
 
