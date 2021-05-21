@@ -1,4 +1,4 @@
-import styled, { CSSObject, keyframes } from 'styled-components/macro';
+import styled, { keyframes } from 'styled-components/macro';
 import { Link as RouterLink } from 'react-router-dom';
 import { media } from '../../../helpers/styled-media';
 
