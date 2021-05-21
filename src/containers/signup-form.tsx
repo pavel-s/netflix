@@ -80,7 +80,12 @@ const SignUpForm = () => {
         {formik.errors.password && (
           <Form.Error>{formik.errors.password}</Form.Error>
         )}
-        <Form.Submit disabled={formik.isSubmitting}>Sign Up</Form.Submit>
+        <Form.Submit
+          disabled={formik.isSubmitting}
+          isLoading={formik.isSubmitting}
+        >
+          Sign Up
+        </Form.Submit>
       </Form.Base>
       <Form.TextBig>
         Already a user?{' '}

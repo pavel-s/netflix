@@ -10,12 +10,12 @@ import {
   TFlexDirection,
 } from './styles/jumbotron';
 
-type TJumbotron = TRSC<'div', { direction: TFlexDirection }> & {
-  Container: TRSC<'div'>;
-  Pane: TRSC<'div', { direction: TFlexDirection }>;
-  Title: TRSC<'div'>;
-  Subtitle: TRSC<'div'>;
-  Image: TRSC<'img'>;
+type TJumbotron = TRSC<typeof Item, { direction: TFlexDirection }> & {
+  Container: TRSC<typeof Container>;
+  Pane: TRSC<typeof Pane>;
+  Title: TRSC<typeof Title>;
+  Subtitle: TRSC<typeof Subtitle>;
+  Image: TRSC<typeof Image>;
 };
 
 const Jumbotron: TJumbotron = ({ direction = 'row', children, ...rest }) => {

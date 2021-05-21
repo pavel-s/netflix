@@ -74,7 +74,6 @@ const LoginForm = () => {
         <Form.Row>
           <Form.Row>
             <Form.Checkbox
-              label='Remember me'
               id='rememberMe'
               checked={formik.values.rememberMe}
               onChange={formik.handleChange}

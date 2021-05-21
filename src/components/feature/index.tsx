@@ -1,9 +1,9 @@
 import { TRSC } from '../../types';
 import { Container, Inner, Title, Subtitle } from './styles/feature';
 
-type TFeature = TRSC<'div'> & {
-  Title: TRSC<'h1'>;
-  Subtitle: TRSC<'h2'>;
+type TFeature = TRSC<typeof Container> & {
+  Title: TRSC<typeof Title>;
+  Subtitle: TRSC<typeof Subtitle>;
 };
 
 const Feature: TFeature = ({ children, ...rest }) => {

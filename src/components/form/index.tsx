@@ -1,4 +1,3 @@
-import { LinkProps } from 'react-router-dom';
 import { TRSC } from '../../types';
 import {
   Container,
@@ -15,18 +14,18 @@ import {
   TextButton,
 } from './styles/form';
 
-type TForm = TRSC<'div'> & {
-  Base: TRSC<'form'>;
-  Title: TRSC<'h1'>;
-  Input: TRSC<'input', { error?: boolean }>;
-  Error: TRSC<'p'>;
-  Submit: TRSC<'button', { isLoading?: boolean }, 'type'>;
-  Row: TRSC<'div'>;
-  Checkbox: TRSC<'input', { label: string }, 'type'>;
-  Text: TRSC<'p'>;
-  TextBig: TRSC<'p'>;
-  Link: TRSC<'a', LinkProps & { color?: string }>;
-  TextButton: TRSC<'button'>;
+type TForm = TRSC<typeof Container> & {
+  Base: TRSC<typeof Base>;
+  Title: TRSC<typeof Title>;
+  Input: TRSC<typeof Input>;
+  Error: TRSC<typeof Error>;
+  Submit: TRSC<typeof Submit>;
+  Row: TRSC<typeof Row>;
+  Checkbox: TRSC<typeof Checkbox>;
+  Text: TRSC<typeof Text>;
+  TextBig: TRSC<typeof TextBig>;
+  Link: TRSC<typeof Link>;
+  TextButton: TRSC<typeof TextButton>;
 };
 
 const Form: TForm = ({ children, ...rest }) => {
@@ -50,8 +49,6 @@ Form.Error = function FormError({ ...rest }) {
 };
 
 Form.Submit = function FormSubmit({ isLoading = false, children, ...rest }) {
-  console.log('isLoading: ', isLoading);
-
   return (
     <Submit {...rest} isLoading={isLoading} type='submit'>
       {children}

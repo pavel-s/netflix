@@ -1,11 +1,12 @@
+import { FC } from 'react';
 import { TRSC } from '../../types';
 import { Container, Inner, Title, Links, Link, Text } from './styles/footer';
 
-type TFooter = TRSC<'div'> & {
-  Title: TRSC<'p'>;
-  Links: TRSC<'ul'>;
-  Link: TRSC<'a'>;
-  Text: TRSC<'p'>;
+type TFooter = TRSC<typeof Container> & {
+  Title: TRSC<typeof Title>;
+  Links: TRSC<typeof Links>;
+  Link: FC<JSX.IntrinsicElements['a']>;
+  Text: TRSC<typeof Text>;
 };
 
 const Footer: TFooter = ({ children, ...rest }) => {

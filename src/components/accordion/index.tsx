@@ -16,12 +16,12 @@ import {
   Title,
 } from './styles/accordion';
 
-type TAccordion = TRSC<'div'> & {
-  Title: TRSC<'h1'>;
-  Frame: TRSC<'div'>;
-  Item: TRSC<'div'>;
-  Header: TRSC<'div'>;
-  Body: TRSC<'span'>;
+type TAccordion = TRSC<typeof Container> & {
+  Title: TRSC<typeof Title>;
+  Frame: TRSC<typeof Frame>;
+  Item: TRSC<typeof Item>;
+  Header: TRSC<typeof Header>;
+  Body: TRSC<typeof Body>;
 };
 
 const Accordion: TAccordion = ({ children, ...rest }) => {

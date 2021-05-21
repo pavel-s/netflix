@@ -1,20 +1,18 @@
 import { FC } from 'react';
 
 /**
- * a component type which returns styled component and redirect html element attributes props to it.
- * ref type from IntrinsicElements is incompatible with styles-components, type ref in P.
- * @param T - element name ('p', 'div', 'input'...)
+ * infer props from styled component
+ * @param C - typeof component
  * @param P - props
- * @param O - exclude attributes ('type', 'type' | 'value')
+ * @example
+ * const StyledDiv = styled.div<{ bgColor: CSSObject['backgroundColor'] }>`
+ *  background-color: ${({ bgColor }) => bgColor};
+ * `;
+ * const MyComponent: TRSC<typeof StyledDiv> = ({ bgColor }) => <StyledDiv bgColor={bgColor}>Hello!</StyledDiv>
  */
-export type TRSC<T extends keyof JSX.IntrinsicElements, P = {}, O = undefined> =
-  FC<
-    Omit<
-      JSX.IntrinsicElements[T],
-      O extends keyof Omit<JSX.IntrinsicElements[T], 'ref'> ? 'ref' | O : 'ref'
-    > &
-      P
-  >;
+export type TRSC<C extends React.ComponentType, P = {}> = FC<
+  C extends React.ComponentType<infer CP> ? CP & P : P
+>;
 
 export type TMediaItem = {
   maturity: string;

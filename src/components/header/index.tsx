@@ -1,12 +1,10 @@
 import { Background, Container, Logo, SignButton } from './styles/header';
-import { LinkProps } from 'react-router-dom';
 import { TRSC } from '../../types';
 
-type THeader = TRSC<'div'> & {
-  // Container: TRSC<'div'>;
-  Logo: TRSC<'img'>;
-  Frame: TRSC<'div'>;
-  SignButton: TRSC<'a', LinkProps>;
+type THeader = TRSC<typeof Background> & {
+  Logo: TRSC<typeof Logo>;
+  Frame: TRSC<typeof Container>;
+  SignButton: TRSC<typeof SignButton>;
 };
 
 const Header: THeader = ({ children, ...rest }) => {
