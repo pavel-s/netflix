@@ -1,5 +1,6 @@
-import styled, { keyframes } from 'styled-components/macro';
+import styled, { CSSObject, keyframes } from 'styled-components/macro';
 import { Link as RouterLink } from 'react-router-dom';
+import { media } from '../../../helpers/styled-media';
 
 export const Container = styled.div`
   margin: 0 auto;
@@ -14,7 +15,7 @@ export const Container = styled.div`
   font-size: 13px;
   background-color: rgba(0, 0, 0, 0.75);
 
-  @media (max-width: 549px) {
+  ${media.small} {
     padding: 60px 5%;
   }
 `;
