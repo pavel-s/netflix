@@ -6,7 +6,7 @@ const HeaderContainer = () => {
   const user = useAuthUser();
   const { signOut } = useAuth();
   return (
-    <Header>
+    <Header url={'/images/misc/home-bg.jpg'}>
       <Header.Frame>
         <Header.Logo src='/images/misc/logo.svg' alt='Netflix' />
         {user ? (

@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import * as ROUTES from './constants/routes';
 
 /**
  * infer props from styled component
@@ -22,4 +23,11 @@ export type TMediaItem = {
   id: string;
   genre: string;
   docId: string;
+};
+
+export type TAppRoutes = typeof ROUTES[keyof typeof ROUTES];
+
+export type TUserProfile = {
+  displayName: string;
+  photoURL: string;
 };

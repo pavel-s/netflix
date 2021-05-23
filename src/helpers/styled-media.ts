@@ -6,5 +6,5 @@ export const media = {
   small: customMediaQuery(549),
   middle: customMediaQuery(768),
   big: customMediaQuery(949),
-  huge: customMediaQuery(1200),
+  huge: customMediaQuery(1450),
 };

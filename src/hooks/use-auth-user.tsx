@@ -35,9 +35,12 @@ const signUp = ({
   email: string;
   password: string;
 }): Promise<void> => {
-  return auth
-    .createUserWithEmailAndPassword(email, password)
-    .then((result) => result.user?.updateProfile({ displayName: name }));
+  return auth.createUserWithEmailAndPassword(email, password).then((result) =>
+    result.user?.updateProfile({
+      displayName: name,
+      photoURL: `images/users/${Math.floor(Math.random() * 5) + 1}.png`,
+    })
+  );
 };
 
 const signOut = () => auth.signOut();
