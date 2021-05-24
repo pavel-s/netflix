@@ -17,7 +17,7 @@ export const Background = styled.div<{
     ), url(${url}) top left / cover no-repeat`
       : 'none'};
 
-  ${media.big} {
+  ${media.huge} {
     ${({ hideOnSmallViewPort }) => hideOnSmallViewPort && 'background: none;'}
   }
 `;
@@ -79,7 +79,7 @@ export const Feature = styled.div`
   padding: 150px 56px 500px 56px;
   color: #fff;
 
-  ${media.big} {
+  ${media.huge} {
     display: none;
   }
 `;

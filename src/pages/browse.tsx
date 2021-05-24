@@ -2,14 +2,10 @@ import { useEffect, useState } from 'react';
 import { Loading } from '../components';
 import BrowseContainer from '../containers/browse';
 import ProfileSelector from '../containers/ProfileSelector';
-import { useAuthUser, useContent } from '../hooks';
-import { TFirebaseUser } from '../lib/firebase.prod';
+import { useAuthUser } from '../hooks';
 import { TUserProfile } from '../types';
-import { selectionMap } from '../utils.ts/selectionMap';
 
 const Browse = () => {
-  const films = useContent('films');
-  const series = useContent('series');
   const user = useAuthUser();
 
   const [loading, setLoading] = useState(true);

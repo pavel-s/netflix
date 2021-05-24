@@ -24,7 +24,8 @@ export const Title = styled.p`
     text-decoration: none;
     color: #757575;
   }
-  & > a:hover {
+  & > a:hover,
+  & > a:focus-visible {
     text-decoration: underline;
   }
 `;
@@ -48,7 +49,9 @@ export const Link = styled.li`
     text-decoration: none;
     color: #757575;
   }
-  & > a:hover {
+
+  & > a:hover,
+  & > a:focus-visible {
     text-decoration: underline;
   }
 
