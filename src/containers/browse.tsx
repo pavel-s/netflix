@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Card, Header } from '../components';
+import { Card, Header, Player } from '../components';
 import * as ROUTES from '../constants/routes';
 import { useAuth, useContent } from '../hooks';
 import { TMediaItem, TUserProfile } from '../types';
@@ -116,6 +116,10 @@ const BrowseContainer = ({ profile }: { profile: TUserProfile }) => {
                   <Card.FeatureClose onClick={() => setActiveItem(null)}>
                     <img src='/images/icons/close.png' alt='close' />
                   </Card.FeatureClose>
+                  <Player>
+                    <Player.Button>Play</Player.Button>
+                    <Player.Video src='videos/bunny.mp4' controls />
+                  </Player>
                 </Card.Feature>
               )}
             </Card>

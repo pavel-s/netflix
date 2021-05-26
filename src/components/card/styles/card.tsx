@@ -97,6 +97,10 @@ export const Feature = styled.div<{
   position: relative;
   transition: background 0.5s;
 
+  > * {
+    margin: 15px 0;
+  }
+
   ${Subtitle} {
     font-size: 18px;
     margin: 5px 0;
