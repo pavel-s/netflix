@@ -1,10 +1,11 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Card, Header, Player } from '../components';
 import * as ROUTES from '../constants/routes';
 import { useAuth, useContent } from '../hooks';
 import { TMediaItem, TUserProfile } from '../types';
 import { selectionMap } from '../utils.ts/selectionMap';
 import FooterContainer from './footer';
+import Fuse from 'fuse.js';
 
 const DEFAULT_USER_PHOTO = 'images/users/1.png';
 const BACKGROUND_IMAGE = 'images/misc/joker1.jpg';
@@ -13,13 +14,31 @@ const LOGO = 'images/misc/logo.svg';
 const BrowseContainer = ({ profile }: { profile: TUserProfile }) => {
   const { signOut } = useAuth();
 
+  const [searchTerm, setSearchTerm] = useState('');
+
   const [category, setCategory] = useState<'films' | 'series'>('films');
 
   const [activeItem, setActiveItem] = useState<TMediaItem | null>(null);
 
   const content = useContent(category);
 
-  const rows = useMemo(() => selectionMap(content), [content]);
+  const mappedContent = useMemo(() => selectionMap(content), [content]);
+
+  const [rows, setRows] = useState(mappedContent);
+
+  useEffect(() => {
+    const fuse = new Fuse(mappedContent, {
+      keys: ['items.title', 'items.genre', 'items.description'],
+    });
+    if (mappedContent.length > 0 && searchTerm.length > 1) {
+      const results = fuse.search(searchTerm).map(({ item }) => item);
+      if (results.length > 0) {
+        setRows(results);
+      }
+    } else {
+      setRows(mappedContent);
+    }
+  }, [mappedContent, searchTerm]);
 
   return (
     <>
@@ -41,7 +60,10 @@ const BrowseContainer = ({ profile }: { profile: TUserProfile }) => {
             </Header.TextButton>
           </Header.Group>
           <Header.Group>
-            <Header.Search />
+            <Header.Search
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
             <Header.Profile>
               <Header.ProfileImage
                 url={profile.photoURL ? profile.photoURL : DEFAULT_USER_PHOTO}

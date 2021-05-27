@@ -18,7 +18,7 @@ import {
   PlayButton,
 } from './styles/header';
 import { TAppRoutes, TRSC } from '../../types';
-import { FC, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 type THeader = TRSC<typeof Background> & {
   Logo: TRSC<typeof Logo, { to?: TAppRoutes }>;
@@ -32,7 +32,7 @@ type THeader = TRSC<typeof Background> & {
   ProfileImage: TRSC<typeof ProfileImage>;
   Dropdown: TRSC<typeof Dropdown>;
   Profile: TRSC<typeof Profile>;
-  Search: FC;
+  Search: TRSC<typeof SearchInput>;
   PlayButton: TRSC<typeof PlayButton>;
 };
 
@@ -92,7 +92,7 @@ Header.Profile = function HeaderProfile({ children, ...rest }) {
   return <Profile {...rest}>{children}</Profile>;
 };
 
-Header.Search = function HeaderSearch() {
+Header.Search = function HeaderSearch({ ...rest }) {
   const [active, setActive] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -105,7 +105,7 @@ Header.Search = function HeaderSearch() {
       <button onClick={() => setActive((active) => !active)}>
         <SearchIcon src='images/icons/search.png' />
       </button>
-      <SearchInput ref={inputRef} />
+      <SearchInput {...rest} ref={inputRef} />
     </Search>
   );
 };
