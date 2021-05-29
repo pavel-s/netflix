@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> render Card with populated data 1`] = `
+<div
+  class="card__Container-vait2u-0 gDjoKe"
+>
+  <div
+    class="card__CardContainer-vait2u-1 csYGmB"
+  >
+    <h2
+      class="card__Title-vait2u-2 fmrCPZ"
+    >
+      Children
+    </h2>
+    <div
+      class="card__Items-vait2u-3 grIBiZ"
+    >
+      <button
+        class="card__Item-vait2u-6 iMYRJV"
+      >
+        <img
+          alt="Joker"
+          class="card__ItemImage-vait2u-4 ehhpt"
+          src="/images/films/children/joker/small.jpg"
+        />
+        <div
+          class="card__Meta-vait2u-5 hzdAah"
+        >
+          <h3
+            class="card__Subtitle-vait2u-7 ejogZR"
+          >
+            Joker
+          </h3>
+          <p
+            class="card__Text-vait2u-8 hUQirf"
+          >
+            Joker description
+          </p>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Card /> render Card.Feature with no background and 0 maturity 1`] = `
+<div
+  class="card__Container-vait2u-0 gDjoKe"
+>
+  <div
+    class="card__CardContainer-vait2u-1 csYGmB"
+  >
+    <div
+      class="card__Feature-vait2u-9 bOidRF"
+    >
+      <div
+        class="card__Group-vait2u-10 dykZoC"
+      >
+        <div
+          class="card__Maturity-vait2u-11 kYVsAL"
+        >
+          0
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Card /> render Card.Feature with populated data 1`] = `
+<div
+  class="card__Container-vait2u-0 gDjoKe"
+>
+  <div
+    class="card__CardContainer-vait2u-1 csYGmB"
+  >
+    <div
+      class="card__Feature-vait2u-9 jdhkkb"
+    >
+      <h2
+        class="card__Title-vait2u-2 fmrCPZ"
+      >
+        Joker
+      </h2>
+      <p
+        class="card__Text-vait2u-8 hUQirf"
+      >
+        Joker description
+      </p>
+      <div
+        class="card__Group-vait2u-10 dykZoC"
+      >
+        <div
+          class="card__Maturity-vait2u-11 iSkcjr"
+        >
+          15
+        </div>
+        <h3
+          class="card__Subtitle-vait2u-7 ejogZR"
+        >
+          Children
+        </h3>
+      </div>
+      <button
+        class="card__FeatureClose-vait2u-12 tCXhS"
+      >
+        <img
+          alt="close"
+          src="/images/icons/close.png"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
