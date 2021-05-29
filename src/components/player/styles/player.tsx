@@ -27,9 +27,27 @@ export const Button = styled.button`
 `;
 
 export const Close = styled.button`
+  border: none;
+  padding: 0;
+  background: none;
+
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+
+  > img {
+    width: 100%;
+    filter: brightness(0) invert(1);
+  }
+
+  :hover,
+  :focus-visible {
+    opacity: 1;
+    transform: scale(1.2);
+  }
 `;
 
 export const LockBody = createGlobalStyle`
@@ -53,7 +71,6 @@ export const Overlay = styled.div`
 
 export const Video = styled.video`
   width: 70%;
-  position: relative;
 
   ${media.middle} {
     width: 100%;

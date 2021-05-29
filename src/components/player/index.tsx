@@ -19,7 +19,6 @@ import ReactDOM from 'react-dom';
 
 type TPlayer = TRSC<typeof Container> & {
   Button: TRSC<typeof Button>;
-  Close: TRSC<typeof Close>;
   Video: TRSC<typeof Video>;
 };
 
@@ -58,16 +57,6 @@ Player.Button = function PlayerButton({ children, ...rest }) {
   );
 };
 
-Player.Close = function PlayerClose({ children, ...rest }) {
-  const { setShow } = useContext(PlayerContext);
-
-  return (
-    <Close {...rest} onClick={() => setShow(false)}>
-      {children}
-    </Close>
-  );
-};
-
 Player.Video = function PlayerVideo({ children, ...rest }) {
   const { show, setShow } = useContext(PlayerContext);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -87,16 +76,20 @@ Player.Video = function PlayerVideo({ children, ...rest }) {
               setShow(false);
             }
           }}
+          data-testid='player'
         >
           <LockBody />
           <Video
             onClick={(e) => e.stopPropagation()}
             ref={videoRef}
-            id='netflix-player'
+            data-testid='netflix-player'
             {...rest}
           >
             {children}
           </Video>
+          <Close>
+            <img src='/images/icons/close-slim.png' alt='Close' />
+          </Close>
         </Overlay>,
         document.body
       )
