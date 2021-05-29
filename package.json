@@ -55,7 +55,10 @@
   "jest": {
     "collectCoverageFrom": [
       "<rootDir>/src/**/*.{js,jsx,ts,tsx}",
-      "!<rootDir>/src/app.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/App.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/react-app-env.d.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/reportWebVitals.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/types.ts.{js,jsx,ts,tsx}",
       "!<rootDir>/src/helpers/routes.{js,jsx,ts,tsx}",
       "!<rootDir>/src/lib/firebase.{js,jsx,ts,tsx}",
       "!<rootDir>/src/lib/firebase.prod.{js,jsx,ts,tsx}",
