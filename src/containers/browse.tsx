@@ -3,7 +3,7 @@ import { Card, Header, Player } from '../components';
 import * as ROUTES from '../constants/routes';
 import { useAuth, useContent } from '../hooks';
 import { TMediaItem, TUserProfile } from '../types';
-import { selectionMap } from '../utils.ts/selectionMap';
+import { selectionMap } from '../utils/selectionMap';
 import FooterContainer from './footer';
 import Fuse from 'fuse.js';
 

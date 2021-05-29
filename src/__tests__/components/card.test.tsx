@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import { Card } from '../../components';
-import { selectionMap } from '../../utils.ts/selectionMap';
+import { selectionMap } from '../../utils/selectionMap';
 
 // data
 const rows: ReturnType<typeof selectionMap> = [
