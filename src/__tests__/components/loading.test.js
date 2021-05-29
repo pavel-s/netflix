@@ -9,4 +9,12 @@ describe('<Loading />', () => {
 
     expect(container.firstChild).toMatchSnapshot();
   });
+
+  it('render Loading without image and with custom size', () => {
+    const { container } = render(<Loading src={null} size='300px' />);
+
+    expect(container.querySelector('img')).toBeFalsy();
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });

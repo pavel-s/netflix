@@ -14,3 +14,13 @@ exports[`<Loading /> render Loading with user image 1`] = `
   </div>
 </div>
 `;
+
+exports[`<Loading /> render Loading without image and with custom size 1`] = `
+<div
+  class="loading__Container-sc-4ak832-0 jwdWMM"
+>
+  <div
+    class="loading__Spinner-sc-4ak832-1 jQQULg"
+  />
+</div>
+`;
