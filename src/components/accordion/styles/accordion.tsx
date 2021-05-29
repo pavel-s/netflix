@@ -72,11 +72,17 @@ export const Header = styled.div`
   }
 `;
 
-export const Body = styled.div<{ open?: boolean }>`
+export const Body = styled.div`
   background-color: #303030;
   transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
-  max-height: ${({ open }) => (open ? '1200px' : 0)};
   overflow: hidden;
+
+  &.open {
+    max-height: 1200px;
+  }
+  &.closed {
+    max-height: 0;
+  }
 
   & > span {
     display: block;

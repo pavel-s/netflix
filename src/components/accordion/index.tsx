@@ -77,7 +77,7 @@ Accordion.Header = function AccordionHeader({ children, ...rest }) {
 Accordion.Body = function AccordionBody({ children, ...rest }) {
   const { show } = useContext(ToggleContext);
   return (
-    <Body open={show}>
+    <Body className={show ? 'open' : 'closed'}>
       <span {...rest}>{children}</span>
     </Body>
   );
