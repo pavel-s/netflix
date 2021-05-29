@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Feature /> renders Feature with populated data 1`] = `
+<div
+  class="feature__Container-sc-2w3854-0 bdYRgj"
+>
+  <div
+    class="feature__Inner-sc-2w3854-1 gORSro"
+  >
+    <h1
+      class="feature__Title-sc-2w3854-2 jCOETZ"
+    >
+      Unlimited movies, TV shows, and more.
+    </h1>
+    <h2
+      class="feature__Subtitle-sc-2w3854-3 ejYBBF"
+    >
+      Watch anywhere. Cancel anytime.
+    </h2>
+  </div>
+</div>
+`;
