@@ -26,7 +26,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll",
+    "coverage": "react-scripts test --coverage --watchAll",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -50,5 +51,35 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.9"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/app.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/helpers/routes.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/lib/firebase.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/lib/firebase.prod.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/index.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/seed.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/utils/index.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/pages/index.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/global-styles.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/components/index.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/firebase.prod.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/hooks/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/context/*.{js,jsx,ts,tsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "coverageReporters": [
+      "html",
+      "text"
+    ]
   }
 }

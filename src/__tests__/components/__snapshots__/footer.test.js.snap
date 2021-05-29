@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> render Footer title, 8 links and text 1`] = `
+<div
+  class="footer__Container-sc-58hhi-0 gLeidq"
+>
+  <div
+    class="footer__Inner-sc-58hhi-1 hxpWbN"
+  >
+    <p
+      class="footer__Title-sc-58hhi-2 iYvwUS"
+    >
+      Questions? Call 
+      <a
+        href="tel:8-800-100-9668"
+      >
+        8-800-100-9668
+      </a>
+    </p>
+    <ul
+      class="footer__Links-sc-58hhi-3 dVUMzK"
+    >
+      <li
+        class="footer__Link-sc-58hhi-4 gBCxki"
+      >
+        <a
+          href="#"
+        >
+          Lorem
+        </a>
+      </li>
+      <li
+        class="footer__Link-sc-58hhi-4 gBCxki"
+      >
+        <a
+          href="#"
+        >
+          Lorem
+        </a>
+      </li>
+      <li
+        class="footer__Link-sc-58hhi-4 gBCxki"
+      >
+        <a
+          href="#"
+        >
+          Lorem
+        </a>
+      </li>
+      <li
+        class="footer__Link-sc-58hhi-4 gBCxki"
+      >
+        <a
+          href="#"
+        >
+          Lorem
+        </a>
+      </li>
+      <li
+        class="footer__Link-sc-58hhi-4 gBCxki"
+      >
+        <a
+          href="#"
+        >
+          Lorem
+        </a>
+      </li>
+      <li
+        class="footer__Link-sc-58hhi-4 gBCxki"
+      >
+        <a
+          href="#"
+        >
+          Lorem
+        </a>
+      </li>
+      <li
+        class="footer__Link-sc-58hhi-4 gBCxki"
+      >
+        <a
+          href="#"
+        >
+          Lorem
+        </a>
+      </li>
+      <li
+        class="footer__Link-sc-58hhi-4 gBCxki"
+      >
+        <a
+          href="#"
+        >
+          Lorem
+        </a>
+      </li>
+    </ul>
+    <p
+      class="footer__Text-sc-58hhi-5 eNZVhR"
+    >
+      Netflix Russia
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loading /> render Loading with user image 1`] = `
+<div
+  class="loading__Container-sc-4ak832-0 jwdWMM"
+>
+  <div
+    class="loading__Spinner-sc-4ak832-1 hedsIg"
+  >
+    <img
+      class="loading__Image-sc-4ak832-2 dVoPWL"
+      src="/images/users/1.png"
+    />
+  </div>
+</div>
+`;
