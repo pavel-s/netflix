@@ -68,7 +68,7 @@ const rotate = keyframes`
 `;
 
 export const Submit = styled.button.attrs({ type: 'submit' })<{
-  isLoading: boolean;
+  isLoading?: boolean;
 }>`
   position: relative;
   border: none;

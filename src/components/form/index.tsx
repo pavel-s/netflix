@@ -48,12 +48,8 @@ Form.Error = function FormError({ ...rest }) {
   return <Error {...rest} />;
 };
 
-Form.Submit = function FormSubmit({ isLoading = false, children, ...rest }) {
-  return (
-    <Submit {...rest} isLoading={isLoading} type='submit'>
-      {children}
-    </Submit>
-  );
+Form.Submit = function FormSubmit({ children, ...rest }) {
+  return <Submit {...rest}>{children}</Submit>;
 };
 
 Form.Row = function FormRow({ children, ...rest }) {
