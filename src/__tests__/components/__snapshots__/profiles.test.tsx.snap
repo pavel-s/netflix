@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Profiles /> renders Profiles with populated data 1`] = `
+<div
+  class="profiles__Container-f2p1mu-0 blkBUH"
+>
+  <h1
+    class="profiles__Title-f2p1mu-1 bMryGj"
+  >
+    Who is watching?
+  </h1>
+  <ul
+    class="profiles__List-f2p1mu-2 jDdRby"
+    data-testid="list"
+  >
+    <li
+      class="profiles__ListItem-f2p1mu-3 lcCRBn"
+    >
+      <button
+        class="profiles__User-f2p1mu-6 dAonrq"
+      >
+        <img
+          class="profiles__Avatar-f2p1mu-4 jYEqsr"
+          data-testid="image-mike"
+          src="images/users/1.png"
+        />
+        <p
+          class="profiles__Name-f2p1mu-5 gGDeQY"
+        >
+          Mike
+        </p>
+      </button>
+    </li>
+    <li
+      class="profiles__ListItem-f2p1mu-3 lcCRBn"
+    >
+      <button
+        class="profiles__User-f2p1mu-6 dAonrq"
+      >
+        <img
+          class="profiles__Avatar-f2p1mu-4 jYEqsr"
+          src="images/users/2.png"
+        />
+        <p
+          class="profiles__Name-f2p1mu-5 gGDeQY"
+        >
+          Steve
+        </p>
+      </button>
+    </li>
+    <li
+      class="profiles__ListItem-f2p1mu-3 lcCRBn"
+    >
+      <button
+        class="profiles__User-f2p1mu-6 dAonrq"
+      >
+        <img
+          class="profiles__Avatar-f2p1mu-4 jYEqsr"
+          src="images/users/3.png"
+        />
+        <p
+          class="profiles__Name-f2p1mu-5 gGDeQY"
+        >
+          Bob
+        </p>
+      </button>
+    </li>
+  </ul>
+</div>
+`;

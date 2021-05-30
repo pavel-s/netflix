@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> renders Form with populated data 1`] = `
+<div
+  class="form__Container-sc-1e02ltb-0 dTbbCb"
+>
+  <h1
+    class="form__Title-sc-1e02ltb-2 kkeSEH"
+  >
+    Sign In Now
+  </h1>
+  <form
+    class="form__Base-sc-1e02ltb-1 NkBbX"
+  >
+    <p
+      class="form__Error-sc-1e02ltb-4 dprvGA"
+    >
+      Form error
+    </p>
+    <input
+      class="form__Input-sc-1e02ltb-3 gqlhzz"
+      placeholder="Email or phone number"
+      type="text"
+    />
+    <input
+      class="form__Input-sc-1e02ltb-3 gFNeLa"
+      placeholder="Password"
+      type="password"
+    />
+    <button
+      class="form__Submit-sc-1e02ltb-5 fvISnT"
+      type="submit"
+    >
+      Sign In
+    </button>
+    <div
+      class="form__Row-sc-1e02ltb-6 ciGvba"
+    >
+      <div
+        class="form__Row-sc-1e02ltb-6 ciGvba"
+      >
+        <input
+          class="form__Checkbox-sc-1e02ltb-7 CTzfr"
+          id="rememberMe"
+          type="checkbox"
+        />
+        <label
+          for="rememberMe"
+        >
+          Remember me
+        </label>
+      </div>
+      <a
+        class="form__Link-sc-1e02ltb-10 jZsvly"
+        href="/home"
+      >
+        Need help?
+      </a>
+    </div>
+  </form>
+  <p
+    class="form__TextBig-sc-1e02ltb-9 qOJIB"
+    data-testid="text-big"
+  >
+    New to Netflix?
+     
+    <a
+      class="form__Link-sc-1e02ltb-10 ASZx"
+      color="#fff"
+      href="/home"
+    >
+      Sign up now
+    </a>
+  </p>
+  <p
+    class="form__Text-sc-1e02ltb-8 hBXpQP"
+    data-testid="text"
+  >
+    This page is protected by Google reCAPTCHA to ensure you're not a bot.
+    <button
+      class="form__TextButton-sc-1e02ltb-11 gINjTt"
+    >
+      Learn more.
+    </button>
+  </p>
+</div>
+`;
+
+exports[`<Form /> renders Form with submit button in loading state 1`] = `
+<div
+  class="form__Container-sc-1e02ltb-0 dTbbCb"
+>
+  <button
+    class="form__Submit-sc-1e02ltb-5 hpSdAz"
+    type="submit"
+  >
+    Sign In
+  </button>
+</div>
+`;
