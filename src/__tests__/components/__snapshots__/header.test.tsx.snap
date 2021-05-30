@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders basic Header with background 1`] = `
+<div
+  class="header__Background-sc-1qf3jwc-0 dEhBeJ"
+>
+  <div
+    class="header__Container-sc-1qf3jwc-1 iJrjfW"
+  >
+    <img
+      alt="Netflix"
+      class="header__Logo-sc-1qf3jwc-2 edGsUc"
+      src="/images/misc/logo.svg"
+    />
+    <a
+      class="header__SignButton-sc-1qf3jwc-4 kCSDSK"
+      href="/login"
+    >
+      Sign In
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<Header /> renders basic Header without background 1`] = `
+<div
+  class="header__Background-sc-1qf3jwc-0 dEAuVS"
+>
+  <div
+    class="header__Container-sc-1qf3jwc-1 iJrjfW"
+  >
+    <img
+      alt="Netflix"
+      class="header__Logo-sc-1qf3jwc-2 edGsUc"
+      src="/images/misc/logo.svg"
+    />
+    <a
+      class="header__SignButton-sc-1qf3jwc-4 kCSDSK"
+      href="/login"
+    >
+      Sign In
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<Header /> renders full Header 1`] = `
+<div
+  class="header__Background-sc-1qf3jwc-0 ioQOEo"
+>
+  <div
+    class="header__Container-sc-1qf3jwc-1 iJrjfW"
+  >
+    <div
+      class="header__Group-sc-1qf3jwc-9 fRouHy"
+    >
+      <a
+        class="header__LogoLink-sc-1qf3jwc-3 eTWTRb"
+        href="/"
+      >
+        <img
+          alt="Netflix"
+          class="header__Logo-sc-1qf3jwc-2 edGsUc"
+          src="images/misc/logo.svg"
+        />
+      </a>
+      <button
+        class="header__TextButton-sc-1qf3jwc-8 fCFpgM"
+      >
+        Films
+      </button>
+      <button
+        class="header__TextButton-sc-1qf3jwc-8 CpwQL"
+      >
+        Series
+      </button>
+    </div>
+    <div
+      class="header__Group-sc-1qf3jwc-9 fRouHy"
+    >
+      <div
+        class="header__Search-sc-1qf3jwc-15 doTUJA"
+      >
+        <button
+          data-testid="search-button"
+        >
+          <img
+            class="header__SearchIcon-sc-1qf3jwc-13 gFOGps"
+            src="images/icons/search.png"
+          />
+        </button>
+        <input
+          class="header__SearchInput-sc-1qf3jwc-14 dCGTSp"
+          data-testid="search-input"
+          type="text"
+          value="frozen"
+        />
+      </div>
+      <div
+        class="header__Profile-sc-1qf3jwc-12 dJSJdG"
+      >
+        <div
+          class="header__ProfileImage-sc-1qf3jwc-10 bTDlug"
+        />
+        <div
+          class="header__Dropdown-sc-1qf3jwc-11 eGVzkl"
+        >
+          <div
+            class="header__Group-sc-1qf3jwc-9 fRouHy"
+          >
+            <div
+              class="header__ProfileImage-sc-1qf3jwc-10 bTDlug"
+            />
+            <button
+              class="header__TextButton-sc-1qf3jwc-8 CpwQL"
+            >
+              Steve
+            </button>
+          </div>
+          <button
+            class="header__TextButton-sc-1qf3jwc-8 CpwQL"
+          >
+            Sign out
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="header__Feature-sc-1qf3jwc-5 YbyHX"
+  >
+    <h2
+      class="header__FeatureCallOut-sc-1qf3jwc-6 eUrcDy"
+    >
+      Watch Joker now.
+    </h2>
+    <p
+      class="header__Text-sc-1qf3jwc-7 eVXLUY"
+    >
+      Forever alone in a crowd
+    </p>
+    <button
+      class="header__PlayButton-sc-1qf3jwc-16 TubXA"
+    >
+      Play
+    </button>
+  </div>
+</div>
+`;

@@ -102,10 +102,13 @@ Header.Search = function HeaderSearch({ ...rest }) {
 
   return (
     <Search active={active}>
-      <button onClick={() => setActive((active) => !active)}>
+      <button
+        onClick={() => setActive((active) => !active)}
+        data-testid='search-button'
+      >
         <SearchIcon src='images/icons/search.png' />
       </button>
-      <SearchInput {...rest} ref={inputRef} />
+      <SearchInput {...rest} ref={inputRef} data-testid='search-input' />
     </Search>
   );
 };
