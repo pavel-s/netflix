@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> renders Home page 1`] = `
+<div
+  class="header__Background-sc-1qf3jwc-0 dEhBeJ"
+>
+  <div
+    class="header__Container-sc-1qf3jwc-1 iJrjfW"
+  >
+    <img
+      alt="Netflix"
+      class="header__Logo-sc-1qf3jwc-2 edGsUc"
+      src="/images/misc/logo.svg"
+    />
+    <a
+      class="header__SignButton-sc-1qf3jwc-4 kCSDSK"
+      href="/login"
+    >
+      Sign In
+    </a>
+  </div>
+  <div
+    class="feature__Container-sc-2w3854-0 bdYRgj"
+  >
+    <div
+      class="feature__Inner-sc-2w3854-1 gORSro"
+    >
+      <h1
+        class="feature__Title-sc-2w3854-2 jCOETZ"
+      >
+        Unlimited movies, TV shows, and more.
+      </h1>
+      <h2
+        class="feature__Subtitle-sc-2w3854-3 ejYBBF"
+      >
+        Watch anywhere. Cancel anytime.
+      </h2>
+      <div
+        class="opt-form__Container-omx043-0 gJxUjf"
+      >
+        <h3
+          class="opt-form__Text-omx043-3 iAQdib"
+        >
+          Ready to watch? Enter your email to create or restart your membership.
+        </h3>
+        <div
+          class="opt-form__Break-omx043-4 ksiJI"
+        />
+        <input
+          class="opt-form__Input-omx043-1 ksMZIZ"
+          placeholder="Email Address"
+        />
+        <button
+          class="opt-form__Button-omx043-2 gJkWUP"
+        >
+          Get Started
+           
+          <img
+            alt=""
+            src="/images/icons/chevron-right.png"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

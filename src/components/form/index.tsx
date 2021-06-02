@@ -45,11 +45,15 @@ Form.Input = function FormInput({ ...rest }) {
 };
 
 Form.Error = function FormError({ ...rest }) {
-  return <Error {...rest} />;
+  return <Error data-testid='form-error' {...rest} />;
 };
 
 Form.Submit = function FormSubmit({ children, ...rest }) {
-  return <Submit {...rest}>{children}</Submit>;
+  return (
+    <Submit data-testid='form-submit' {...rest}>
+      {children}
+    </Submit>
+  );
 };
 
 Form.Row = function FormRow({ children, ...rest }) {

@@ -14,6 +14,7 @@ exports[`<Form /> renders Form with populated data 1`] = `
   >
     <p
       class="form__Error-sc-1e02ltb-4 dprvGA"
+      data-testid="form-error"
     >
       Form error
     </p>
@@ -29,6 +30,7 @@ exports[`<Form /> renders Form with populated data 1`] = `
     />
     <button
       class="form__Submit-sc-1e02ltb-5 fvISnT"
+      data-testid="form-submit"
       type="submit"
     >
       Sign In
@@ -92,6 +94,7 @@ exports[`<Form /> renders Form with submit button in loading state 1`] = `
 >
   <button
     class="form__Submit-sc-1e02ltb-5 hpSdAz"
+    data-testid="form-submit"
     type="submit"
   >
     Sign In
