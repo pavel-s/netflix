@@ -2,18 +2,19 @@ import { Header } from '../components';
 import { TFirebaseUser } from '../lib/firebase.prod';
 import * as ROUTES from '../constants/routes';
 import Profiles from '../components/profiles';
+import { TUserProfile } from '../types';
+import { Dispatch } from 'react';
 
 const ProfileSelector = ({
   user,
   setProfile,
 }: {
-  user: TFirebaseUser | null;
-  setProfile: (profile: any) => any;
+  user: Pick<TFirebaseUser, 'photoURL' | 'displayName'>;
+  setProfile: Dispatch<TUserProfile | null>;
 }) => {
   const handleSelect = () =>
-    setProfile(
-      user ? { displayName: user.displayName, photoURL: user.photoURL } : null
-    );
+    setProfile({ displayName: user.displayName, photoURL: user.photoURL });
+
   return (
     <>
       <Header>

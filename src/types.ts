@@ -28,6 +28,6 @@ export type TMediaItem = {
 export type TAppRoutes = typeof ROUTES[keyof typeof ROUTES];
 
 export type TUserProfile = {
-  displayName: string;
-  photoURL: string;
+  displayName: string | null;
+  photoURL: string | null;
 };

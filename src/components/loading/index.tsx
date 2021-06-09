@@ -9,7 +9,7 @@ type TLoading = TRSC<
 
 const Loading: TLoading = ({ size, src, ...rest }) => {
   return (
-    <Container>
+    <Container data-testid='loading'>
       <LockBody />
       <Spinner size={size}>
         {src ? <Image src={src} {...rest} /> : null}

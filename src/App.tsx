@@ -36,7 +36,7 @@ const App = () => {
           <SignUP />
         </IsUserRedirect>
         <ProtectedRoute exact path={ROUTES.BROWSE} user={user}>
-          <Browse />
+          {user && <Browse user={user} />}
         </ProtectedRoute>
       </Switch>
     </Router>

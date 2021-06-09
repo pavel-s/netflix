@@ -1,0 +1,33 @@
+{
+  "films": [
+    {
+      "title": "Kings Speech",
+      "slug": "kings-speech",
+      "genre": "drama",
+      "description": "King George VI tries to overcome his stammering problem with the help of speech therapist Lionel Logue and makes himself worthy enough to lead his country through World War II.",
+      "maturity": "15",
+      "id": "1877f645-0773-4992-ae71-e1ea685ea840",
+      "docId": "1OTUHrMA51lsL9ymWJkU"
+    }
+  ],
+  "series": [
+    {
+      "maturity": "15",
+      "slug": "the-office",
+      "id": "656c34cc-d502-4690-9862-763df6519af5",
+      "title": "The Office",
+      "genre": "comedies",
+      "description": "A motley group of office workers go through hilarious misadventures at the Scranton, Pennsylvania, branch of the Dunder Mifflin Paper Company.",
+      "docId": "9OssssCCjjcezaqwaI7S"
+    },
+    {
+      "slug": "juno",
+      "maturity": "12",
+      "title": "Juno",
+      "description": "Social misfit Juno protects herself with a caustic wit, but her unplanned pregnancy has the teen getting more involved in the lives of her baby's adoptive parents than she expected.",
+      "id": "00800bf3-d394-4a64-a9a0-ca0d2b23b636",
+      "genre": "feel-good",
+      "docId": "hqvjxsSi7kDgwZeSHomq"
+    }
+  ]
+}
